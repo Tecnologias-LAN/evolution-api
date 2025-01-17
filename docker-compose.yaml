@@ -15,7 +15,7 @@ services:
     volumes:
       - evolution_instances:/evolution/instances
     networks:
-      - evolution_chatwoot
+      - common-net
     env_file:
       - stack.env
     expose:
@@ -25,6 +25,6 @@ volumes:
   evolution_instances:
 
 networks:
-  evolution_chatwoot:
-    name: evolution_chatwoot
+  common-net:
+    name: common-net
     driver: bridge
