@@ -12,7 +12,7 @@ services:
     networks:
       - common-net
     env_file:
-      - .env
+      - stack.env
     expose:
       - 8080
 
